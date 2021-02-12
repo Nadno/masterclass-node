@@ -1,0 +1,12 @@
+{
+  "name": "master-class",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
