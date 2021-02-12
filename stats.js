@@ -1,4 +1,5 @@
 const os = require('os');
+const log = require('./logger');
 
 const { freemem, totalmem } = os;
 
@@ -16,7 +17,11 @@ const getStats = () => {
 
 const logStats = () => {
   console.clear()
-  console.table(getStats())
+
+  const stats = getStats();
+
+  log(stats);
+  console.table(stats)
 }
 
 const oneSecond = 1000;
