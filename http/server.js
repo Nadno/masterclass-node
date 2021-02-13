@@ -15,15 +15,13 @@ http
 
     if (!allowed) return;
 
-    if (req.url === '/') {
-      fs.readFile(
-        filePath,
-        (err, content) => {
-          if (err) throw err;
-          return res.end(content);
-        }
-      );
-    }
+    fs.readFile(
+      filePath,
+      (err, content) => {
+        if (err) throw err;
+        return res.end(content);
+      }
+    );
 
     return;
   })
