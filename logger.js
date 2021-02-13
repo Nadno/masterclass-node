@@ -10,7 +10,7 @@ emitter.on('log', (object) => {
     JSON.stringify(object),
     (err) => {
       if (err) {
-        throw new Error(err);
+        throw err;
       }
     }
   );
